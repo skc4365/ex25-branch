@@ -7,6 +7,7 @@ import lombok.Data;
 @Data
 public class Student {
 
+//	머지테스트
 	private Long id;
 	private String name;
 	private String email;
