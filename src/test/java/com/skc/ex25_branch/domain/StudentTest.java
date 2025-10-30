@@ -15,5 +15,4 @@ public class StudentTest {
 	private Integer age;
 	private LocalDateTime createdAt;
 	private LocalDateTime updatedAt;
-
 }
