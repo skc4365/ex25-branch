@@ -24,6 +24,28 @@ public class StudentService {
 		return studentMapper.findAll();
 	}
 
+	public Student getStudent(Long id) {
+		
+		return studentMapper.findById(id);
+	}
+
+	@Transactional
+	public void createStudent(Student student) {
+		studentMapper.insert(student);
+	}
+
+	@Transactional
+	public void updateStudent(Student student) {
+		studentMapper.update(student);
+	}
+
+	@Transactional
+	public void deleteStudent(Long id) {
+		studentMapper.delete(id);
+	}
+	
+	
+
 //	public String getMyString() {
 //		return "test";
 //	}

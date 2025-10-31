@@ -12,4 +12,12 @@ public interface StudentMapper {
 //	 <select id="findAll" resultType="Student">
 	List<Student> findAll();
 
+	Student findById(Long id);
+
+	void insert(Student student);
+
+	void update(Student student);
+
+	void delete(Long id);
+
 }
